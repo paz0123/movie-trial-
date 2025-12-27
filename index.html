@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Trailer App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Movie Trailer App</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for a movie...">
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+
+  <div class="movie-container" id="movieList"></div>
+
+  <!-- Trailer Modal -->
+  <div id="trailerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeTrailer()">&times;</span>
+      <iframe id="trailerFrame" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
